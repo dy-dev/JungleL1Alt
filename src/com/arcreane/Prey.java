@@ -1,14 +1,34 @@
 package com.arcreane;
 
 public class Prey {
-    static int s_iMaxPreyAge = 30;
-    int m_iAgeMax;
-    int m_iAge;
+    private static int s_iMaxPreyAge = 30;
+    private int m_iAgeMax;
+    private int m_iAge;
 
-    static int s_iMaxPreyLifePoint = 70;
-    int m_iLifePointMax;
-    int m_iLifePoint;
+    private static int s_iMaxPreyLifePoint = 70;
+    private int m_iLifePointMax;
+    private int m_iLifePoint;
 
-    Vision m_Vision;
-    Hearing m_Hearing;
+    private Vision m_Vision;
+    private Hearing m_Hearing;
+
+    void moveToFeed(Plant p_Plant) {
+
+    }
+
+    void eat(Plant p_Plant) {
+
+    }
+
+    void drink(WaterSpot p_WaterSpot) {
+
+    }
+
+    void flee(Predator p_Predator) {
+
+    }
+
+    void mate(Prey p_Prey) {
+
+    }
 }
