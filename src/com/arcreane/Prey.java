@@ -11,6 +11,7 @@ public class Prey {
 
     private Vision m_Vision;
     private Hearing m_Hearing;
+    private Coords m_Coords;
 
     void moveToFeed(Plant p_Plant) {
 
