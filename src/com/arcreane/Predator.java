@@ -1,6 +1,9 @@
 package com.arcreane;
 
 public class Predator {
+    private static final int s_iDrinkingQuantity = 3;
+
+
     private static final int s_iMaxPredatorAge = 40;
     private int m_iAgeMax;
     private int m_iAge;
@@ -13,24 +16,29 @@ public class Predator {
     private Smelling m_Smelling;
     private Coords m_Coords;
 
-
-    void hunt(Prey p_Prey)  {
+    void hunt(Prey p_Prey) {
     }
 
-    Coords move(){
+    Coords move() {
         Coords coords = new Coords();
         //Code pour déterminer les nouvelles coordonnées
         //par exemple le but à atteindre
+
         return coords;
     }
 
-    void mate(Predator p_Predator){
+    void mate(Predator p_Predator) {
     }
 
     void eat(Prey p_Prey) {
     }
 
-    void drink(WaterSpot p_WaterSpot){
+    void drink(WaterSpot p_WaterSpot) {
+        int waterAvailable = p_WaterSpot.getWaterForDrink(s_iDrinkingQuantity);
+
     }
 
+    public void update() {
+        drink(Ecosystem.getInstance().getWaterSpot());
+    }
 }
